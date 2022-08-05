@@ -15,6 +15,3 @@ WORKDIR /tmp
 ENV GIT_SYNC_ROOT=/tmp/git
 
 ENTRYPOINT ["/git-sync"]
-
-# Run as non-root by default.  There's simply no reason to run as root.
-USER 65533:65533
