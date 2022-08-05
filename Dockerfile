@@ -2,7 +2,7 @@ FROM k8s.gcr.io/git-sync/git-sync:v3.6.0 as git-sync
 
 FROM alpine
 
-RUN apk add --no-cache git git-lfs
+RUN apk add --no-cache git git-lfs openssh-client
 
 COPY --from=git-sync /git-sync /git-sync
 
