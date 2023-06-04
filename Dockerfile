@@ -1,4 +1,4 @@
-FROM k8s.gcr.io/git-sync/git-sync:v3.6.0 as git-sync
+FROM registry.k8s.io/git-sync/git-sync:v3.6.5 as git-sync
 
 FROM alpine
 
